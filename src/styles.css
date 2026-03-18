@@ -59,18 +59,28 @@ body {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 12px;
+  font-size: 28px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+  line-height: 80px;
+  height: 80px;
+  width: 80px;
+  margin: 4px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.square:active {
+  transform: scale(0.95);
 }
 
 .board-row:after {
@@ -107,4 +117,12 @@ body {
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row:after {
+  display: none;
 }
