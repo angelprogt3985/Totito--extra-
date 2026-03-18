@@ -100,3 +100,9 @@ body {
   align-items: center;
 }
 
+.game {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
